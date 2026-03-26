@@ -1,0 +1,145 @@
+.home-page {
+  min-height: 100vh;
+  background: #f6f8fb;
+  color: #1f2937;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.header__shop {
+  background: #111827;
+  color: #fff;
+}
+
+.header__container,
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+}
+
+.header__container select {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.65rem;
+}
+
+.header__nav h1 {
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.header__nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header__nav a {
+  color: #334155;
+  font-weight: 600;
+}
+
+.slider h2,
+.about h2,
+.hero h2 {
+  margin: 0 0 0.5rem;
+}
+
+.slider__container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.slide-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.09);
+}
+
+.slide-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.slide-card__body {
+  padding: 1rem;
+}
+
+.slide-card__body h3 {
+  margin: 0 0 0.4rem;
+}
+
+.slide-card__body p {
+  color: #475569;
+  margin: 0 0 0.8rem;
+}
+
+.slide-card__body a,
+.hero button,
+.account button {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  border: 0;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.about h3 {
+  margin: 0.4rem 0;
+  color: #1d4ed8;
+}
+
+.hero,
+.account {
+  background: #fff;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.account__actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.footer {
+  padding: 2rem 0 2.5rem;
+  color: #475569;
+}
+
+.status {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.status--error {
+  color: #b91c1c;
+}
+
+@media (max-width: 720px) {
+  .header__container,
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
